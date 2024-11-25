@@ -20,17 +20,6 @@
     </style>
 </head>
 <body>
-    <video id="video" src="mainvid.mp4" autoplay loop playsinline></video>
-
-    <script>
-        const video = document.getElementById('video');
-
-        // Attempt to play the video with sound
-        video.play().catch(() => {
-            alert('Tap anywhere on the page to enable sound.');
-            video.muted = false;
-            video.play();
-        });
-    </script>
+    <video src="mainvid.mp4" autoplay loop muted playsinline></video>
 </body>
 </html>
